@@ -3,6 +3,8 @@ import avatar1Img from '../assets/images/Kushal.jpg'
 import { LuHome, LuLogOut, LuNewspaper, LuUser } from "react-icons/lu";
 import { cn } from '../mock_data/mockdata';
 
+// Using in topbar
+
 const profileDropdownItems = [
     {
         icon: LuUser,

@@ -5,24 +5,23 @@ import Navbar from "./Navbar";
 import Topbar from "./Topbar";
 
 const AdminLayout = ({ children }) => {
-    return (
+  return (
+    <Suspense>
       <Suspense>
-        <Suspense>
-          <Topbar />
-        </Suspense>
-  
-        <Suspense>
-          <Navbar />
-        </Suspense>
-  
-        <Suspense fallback={<Preloader />}>{children}</Suspense>
-  
-        <Suspense>
-          <Footer hideLinks />
-        </Suspense>
+        <Topbar />
       </Suspense>
-    );
-  };
-  
-  export default AdminLayout;
-  
+
+      <Suspense>
+        <Navbar />
+      </Suspense>
+
+      <Suspense fallback={<Preloader />}>{children}</Suspense>
+
+      <Suspense>
+        <Footer hideLinks />
+      </Suspense>
+    </Suspense>
+  );
+};
+
+export default AdminLayout;

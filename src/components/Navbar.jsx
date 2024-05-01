@@ -5,6 +5,9 @@ import SimplebarReactClient from './SimplebarReactClient';
 import { LuLogOut, LuUserCircle2, LuZap } from "react-icons/lu";
 import VerticalMenu from './VerticalMenu';
 import { getAdminVerticalMenuItems } from '../mock_data/mockdata';
+
+// This componet is the side navigation sidebar.
+
 const Navbar = () => {
     return (
         <div

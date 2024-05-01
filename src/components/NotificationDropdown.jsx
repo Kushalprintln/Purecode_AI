@@ -1,6 +1,9 @@
 import { LuBell } from "react-icons/lu";
 import SimplebarReactClient from "./SimplebarReactClient";
 import { Fragment } from "react";
+
+// Using this in topbar component
+
 const NotificationDropdown = ({ notifications }) => {
     /**
      * Get time since

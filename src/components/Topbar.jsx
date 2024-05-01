@@ -1,11 +1,18 @@
+// Importing react icons
 import { LuAlignJustify, LuSearch } from "react-icons/lu";
+// Importing images
 import logoDarkImg from '../assets/images/logo-dark.png'
 import logoLightImg from '../assets/images/logo-light.png'
+// Importing other components 
 import LanguageDropdown from "./LanguageDropdown";
 import MaximizeScreen from "./MaximizeScreen";
 import NotificationDropdown from "./NotificationDropdown";
-import { notificationsData } from "../mock_data/mockdata";
 import ProfileDropdown from "./ProfileDropdown";
+// Importing data from mockdata
+import { notificationsData } from "../mock_data/mockdata";
+
+// This is the top bar of the page wrapped in AdminLayout component
+
 const Topbar = () => {
     return (
         <header className="sticky top-0 z-40 flex h-18 w-full border-b border-default-200 bg-white dark:bg-default-50 lg:ps-64 hide-in-print">

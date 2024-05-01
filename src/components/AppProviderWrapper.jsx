@@ -1,3 +1,4 @@
+// NOTE: note using this componet as it was not reaquired for creating the dashboard ui.
 
 const AppProvidersWrapper = ({ children }) => {
     // HandleChangeTitle will change the title of the pagee whenever the user will change the page.
